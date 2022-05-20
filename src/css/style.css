@@ -1,0 +1,178 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.main {
+  overflow: hidden !important;
+  height: 100vh !important;
+}
+
+.main h2 {
+  text-transform: uppercase;
+}
+
+.main .current-wrapper {
+  height: 100vh;
+  width: 362px !important;
+  padding-top: 50px;
+  overflow: hidden !important;
+}
+
+.main .data-wrapper {
+  overflow-y: scroll !important;
+}
+
+.main .data-wrapper h2 {
+  font-size: 20px;
+  text-transform: capitalize;
+  font-weight: bold;
+}
+
+.temp h1 {
+  font-size: 40px;
+}
+
+.week {
+  width: 129px;
+  padding: 5px;
+  border-radius: 15px !important;
+}
+
+.week .card {
+  border-radius: 20px;
+  height: 155px;
+  border: none;
+}
+
+.input-group {
+  border-bottom: 1px solid lightgrey;
+  width: 260px;
+  margin: auto;
+}
+
+.input-group input {
+  outline: none !important;
+  border: none !important;
+}
+
+.cards .card {
+  background-color: transparent;
+  width: 230px;
+  padding: 0 15px;
+}
+
+.cards .card .card-body {
+  background-color: white;
+  border: none !important;
+  border-radius: 25px;
+  height: 195px;
+}
+
+.card-index {
+  width: 14px;
+}
+
+.wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.wrap p {
+  border-radius: 26px;
+  width: 254px !important;
+  height: 120px !important;
+}
+
+hr {
+  opacity: 0.2;
+}
+
+.img-fluid {
+  border-radius: 25px;
+  width: 100%;
+  opacity: 0.4;
+  height: 100%;
+  color: black;
+}
+
+.img-fluid + span {
+  top: 0;
+  bottom: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  right: 0;
+  left: 0;
+  font-size: 18px;
+}
+
+.loader {
+  height: 100vh;
+}
+
+.loader .bi-brightness-high {
+  font-size: 100px;
+}
+
+@media (min-width: 0px) and (max-width: 375px) {
+  body {
+    scrollbar-color: transparent transparent !important;
+  }
+  .input-group {
+    display: block;
+    width: 279px !important;
+  }
+  .input-group .search {
+    margin-left: 15px !important;
+  }
+  .main {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    overflow: scroll !important;
+  }
+  .main .current-wrapper {
+    overflow: scroll !important;
+    width: 100% !important;
+    height: auto !important;
+  }
+  .main .data-wrapper {
+    width: 100% !important;
+  }
+  .cards .card {
+    width: 100%;
+  }
+  .cards .card span {
+    font-size: 45px;
+  }
+  .week-days {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+    overflow-x: scroll;
+    overflow-y: hidden;
+  }
+  .week {
+    -webkit-box-pack: justify !important;
+        -ms-flex-pack: justify !important;
+            justify-content: space-between !important;
+  }
+}
+/*# sourceMappingURL=style.css.map */

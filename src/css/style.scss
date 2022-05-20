@@ -1,0 +1,153 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+// .wrapper {
+//   width: 600px;
+//   margin: auto;
+// }
+
+.main {
+  overflow: hidden !important;
+  height: 100vh !important;
+  h2 {
+    text-transform: uppercase;
+  }
+  .current-wrapper {
+    height: 100vh;
+    width: 362px !important;
+    padding-top: 50px;
+    overflow: hidden !important;
+  }
+  .data-wrapper {
+    overflow-y: scroll !important;
+    h2 {
+      font-size: 20px;
+      text-transform: capitalize;
+      font-weight: bold;
+    }
+  }
+}
+.temp {
+  h1 {
+    font-size: 40px;
+  }
+}
+.week {
+  width: 129px;
+  padding: 5px;
+  border-radius: 15px !important;
+  .card {
+    border-radius: 20px;
+    height: 155px;
+    border: none;
+  }
+}
+.input-group {
+  border-bottom: 1px solid lightgrey;
+  width: 260px;
+  margin: auto;
+  input {
+    outline: none !important;
+    border: none !important;
+  }
+}
+.cards {
+  .card {
+    background-color: transparent;
+    width: 230px;
+    padding: 0 15px;
+    .card-body {
+      background-color: white;
+      border: none !important;
+      border-radius: 25px;
+      height: 195px;
+    }
+  }
+}
+.card-index {
+  width: 14px;
+}
+.wrap {
+  display: flex;
+  justify-content: center;
+  p {
+    border-radius: 26px;
+    width: 254px !important;
+    height: 120px !important;
+  }
+}
+hr {
+  opacity: 0.2;
+}
+.img-fluid {
+  border-radius: 25px;
+  width: 100%;
+  opacity: 0.4;
+  height: 100%;
+  color: black;
+  & + span {
+    top: 0;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    right: 0;
+    left: 0;
+    font-size: 18px;
+  }
+}
+.loader {
+  height: 100vh;
+  .bi-brightness-high {
+    font-size: 100px;
+    
+  }
+}
+
+
+@media ( min-width: 0px ) and ( max-width: 375px ) {
+  body {
+    scrollbar-color: transparent transparent !important;
+  }
+  .input-group {
+    display: block;
+    .search {
+      margin-left: 15px !important;
+    }
+    width: 279px !important;
+  }
+  .main {
+    display: flex;
+    flex-wrap: wrap;
+    overflow: scroll !important;
+    .current-wrapper {
+      overflow: scroll !important;
+      width: 100% !important;
+      height: auto !important;
+    }
+    .data-wrapper {
+      width: 100% !important;
+      // overflow: hidden;
+    }
+  }
+  .cards {
+    .card {
+      width: 100%;
+      span {
+        font-size: 45px;
+      }
+    }
+  }
+  .week-days {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: scroll;
+    overflow-y: hidden;
+  }
+  .week {
+    // width: 100%;
+    justify-content: space-between !important;
+  }
+}
